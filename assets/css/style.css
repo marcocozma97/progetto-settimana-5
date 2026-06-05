@@ -99,3 +99,46 @@ nav ul li {
   cursor: pointer;
   margin-top: 1rem;
 }
+
+/* Cards servizi */
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  color: #1F7A4D;
+  font-size: 1.3rem;
+}
+.service-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.3rem;
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  width:90%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+/* Icone delle card */
+.service-card i {
+  font-size: 2rem;
+  color: #1F7A4D;
+  margin-bottom: 1rem;
+}
+
+/* Titoli delle card h3*/
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Testo delle card p*/
+.service-card p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}

@@ -335,6 +335,33 @@ nav ul li:hover {
   gap: 5px;
 }
 
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1,
+.hero p,
+.hero .cta-button {
+  opacity: 0; 
+  animation: fadeUp 0.8s ease-out forwards; 
+}
+
+
+.hero p {
+  animation-delay: 0.2s; 
+}
+
+.hero .cta-button {
+  animation-delay: 0.4s;
+}
+
 }
 
 

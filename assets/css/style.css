@@ -32,7 +32,7 @@ a {
 
 /* Header */
 #site-header {
-displaY: block;
+display: block;
 text-align: center;
 padding: 1rem;
 background-color: white;
@@ -66,7 +66,36 @@ nav ul {
 nav ul li {
   list-style:none;
   display: inline-block;
+  padding: 10px;
   margin: 0;
 }
 
-/* ero section*/
+/* Hero section*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #1F7A4D;
+  color: white;
+  height: 400px;
+  width: 100%;
+}
+
+/* Button hero section*/
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  color: #1F7A4D;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}

@@ -264,6 +264,7 @@ nav ul li:hover {
 
   .hero {
     height: 570px;
+    width: 100%;
   }
 
   .hero h1 {
@@ -337,10 +338,62 @@ nav ul li:hover {
 }
 
 
-
-
-
-
-
-
 /* Cambiamenti CSS quando il min-width è 992*/
+
+@media screen and (min-width: 992px) {
+
+  #site-header {
+    padding: 0 10%; 
+    height: 80px;
+  }
+
+  nav ul li {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 650px; 
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 1rem 2rem; 
+  }
+
+  .services h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .cards-container {
+    flex-wrap: nowrap; 
+    width: 100%;
+    padding: 0 10%; 
+    gap: 30px; 
+    margin: 0;
+  }
+
+  .service-card {
+    flex: 1.2; 
+    padding: 2.5rem 1.5rem;
+  }
+
+  #site-footer {
+    padding: 2.5rem 10%; 
+  }
+
+  .bloom-footer-logo,
+  .social-icons,
+  .copyright {
+    margin-top: 0; 
+  }
+
+}

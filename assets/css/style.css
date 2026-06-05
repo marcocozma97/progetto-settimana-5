@@ -3,7 +3,9 @@
 
 
 /* Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -32,13 +34,14 @@ a {
 
 /* Header */
 #site-header {
-display: block;
-text-align: center;
-padding: 1rem;
-background-color: white;
-height: 100px;
-width: 100%;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+  height: 100px;
+  width: 100%;
 }
+
 /* Logo (foglia) + nome azienda */
 .bloom-logo {
   color: #1F7A4D;
@@ -65,7 +68,7 @@ nav ul {
 
 /* Nav singoli elementi */
 nav ul li {
-  list-style:none;
+  list-style: none;
   display: inline-block;
   padding: 8px;
   margin: 0;
@@ -75,8 +78,9 @@ nav ul li {
 
 nav ul li:hover {
   background-color: #EBF9F1;
-  color:#1F7A4D
+  color: #1F7A4D
 }
+
 /* Hero section*/
 
 .hero {
@@ -108,7 +112,7 @@ nav ul li:hover {
 }
 
 .cta-button:hover {
-  box-shadow: 0 6px 2px rgba(0,0,0,0.5);
+  box-shadow: 0 6px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Cards servizi */
@@ -123,23 +127,25 @@ nav ul li:hover {
   margin-top: 3rem;
   color: #1F7A4D;
   font-size: 1.3rem;
+  font-weight: 700;
 }
+
 .service-card {
   background-color: white;
   border-radius: 8px;
   padding-top: 1rem;
   padding: 1.3rem;
   text-align: center;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-  width:90%;
-  display:flex;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem auto;
 }
 
 .service-card:hover {
-  box-shadow: 0 4px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
   transform: translateY(-3px);
 }
 
@@ -186,7 +192,8 @@ nav ul li:hover {
 
 /* Logo e nome azienda footer */
 
-.bloom-footer-logo i, .bloom-footer-logo span {
+.bloom-footer-logo i,
+.bloom-footer-logo span {
   color: #5CD699;
   font-size: 1.2rem;
   font-weight: bold;
@@ -203,30 +210,32 @@ nav ul li:hover {
 .social-icons {
   margin-top: 1.5rem;
   display: flex;
-  gap: 1.5rem; 
+  gap: 1.5rem;
   justify-content: center;
 }
 
 .social-icons a {
-  background-color: #434242; 
+  background-color: #434242;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .social-icons a i {
   color: white;
   font-size: 0.8rem;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .social-icons a:hover {
   background-color: #1F7A4D;
+  transform: translateY(-3px);
 }
 
 /* Copyright */
@@ -236,3 +245,71 @@ nav ul li:hover {
   font-size: 0.8rem;
   margin-top: 1.5rem;
 }
+
+
+/* Cambiamenti CSS quando il min-width è 768*/
+
+@media screen and (min-width: 768px) {
+  #site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+
+  .hero {
+    height: 570px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+  }
+
+  .hero p {
+    margin-top: 2px;
+    font-size: 18px;
+    max-width: 562px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: center;
+    gap: 15px;
+  }
+ .service-card {
+  width: 40%;
+  margin: 5px;
+ }
+
+ 
+
+}
+
+/* Header sulla linea e logo tutto a sinistra e nav tutta a destra*/
+
+
+
+/* Card diventano 2 su una fila uguali e uno sotto grande quanto loro*/
+
+/* Footer si mette tutto su una linea con distanza uguale fra i tre elementi */
+
+
+
+
+
+
+/* Cambiamenti CSS quando il min-width è 992*/

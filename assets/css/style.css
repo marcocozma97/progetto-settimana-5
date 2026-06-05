@@ -283,19 +283,17 @@ nav ul li:hover {
 }
 
   .cards-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 95%;
-    justify-content: center;
-    gap: 15px;
-  }
- .service-card {
-  width: 40%;
-  margin: 5px;
- }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto;       
+  gap: 15px;           
+}
 
- 
+.service-card {
+  flex: 1 1 calc(50% - 15px); 
+}
 
 }
 

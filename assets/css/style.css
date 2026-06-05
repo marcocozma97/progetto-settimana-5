@@ -13,6 +13,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #1a1a1a;
+  background-color: #FAFAFA;
 }
 
 img {
@@ -28,3 +29,44 @@ a {
 
 /* Aggiungi qui le tue regole, mobile-first. */
 
+
+/* Header */
+#site-header {
+displaY: block;
+text-align: center;
+padding: 1rem;
+background-color: white;
+height: 100px;
+width: 100%;
+}
+/* Logo (foglia) + nome azienda */
+.bloom-logo {
+  color: #1F7A4D;
+}
+
+/* Logo foglia*/
+.bloom-logo i {
+  font-size: 1.2rem;
+}
+
+/* Nome azienda (header) */
+.bloom-logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Nav lista generale*/
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav singoli elementi */
+nav ul li {
+  list-style:none;
+  display: inline-block;
+  margin: 0;
+}
+
+/* ero section*/
